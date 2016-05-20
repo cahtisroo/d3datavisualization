@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css">
+        <meta charset="utf-8">
+        <script type="text/javascript" src="../d3/d3.v3.js"></script>
+    </head>
+    <body>
+        <style type="text/css">
+            p{
+                background-color: grey;
+            }
+            p1{
+                color: red;
+            }
+            p2{
+                color: brown;
+            }
+            p3{
+                color: yellow; 
+            } 
+            p{
+                background-color: grey;
+            }
+        </style>
+        <p>
+        <p1 id="grape"></p1>
+        <br>
+        <p2 id="kiwi"></p2>
+        <br>
+        <p3 id="banana"></p3>
+        </p>    
+    </body>    
+    <script>    
+        window.onload = function(){
+        var fruits = [
+        {
+            kind: "grape",
+            color: "red",
+            quantity: 12,
+            tasty: true
+        },
+        {
+            kind: "kiwi",
+            color: "brown",
+            quantity: 12,
+            tasty: true
+        },
+        {
+            kind: "banana",
+            color: "yellow",
+            quantity: 0,
+            tasty: true
+        }
+        ];  
+        for(var i = 0; i < fruits.length; i++){
+            document.getElementById(fruits[i].kind).innerHTML = fruits[i].quantity + " " + fruits[i].kind 
+        }
+        }
+    </script>            
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
